@@ -62,6 +62,7 @@
 %\setbeamercolor{structure}{fg=ta3skyblue}
 
 \setbeamertemplate{itemize items}[triangle]
+\setlength{\leftmargini}{9em}
 \setbeamertemplate{navigation symbols}{}
 
 \setbeamertemplate{block begin}{
@@ -78,6 +79,17 @@
     \vskip-0.2ex
   \end{beamercolorbox}
 }
+
+\newenvironment{ntblock}
+  {% Begin definition
+    \par\vskip\medskipamount%
+    \begin{beamercolorbox}[rounded=false,shadow=false,leftskip=1cm,colsep*=.75ex,sep=2ex,vmode]{block body}%
+      \usebeamerfont{block body}%
+  }
+  {% End definition
+    \end{beamercolorbox}%
+    \par\vskip\medskipamount%
+  }
 
 \setbeamertemplate{headline}{
   \leavevmode
@@ -100,7 +112,8 @@
 	%% \usebeamercolor{title in headline}{\color{fg}\textbf{\Large{\inserttitle}\\[1.5ex]}}
 	%% \usebeamercolor{author in headline}{\color{fg}{\Large{\insertauthor}\\[1.5ex]}}
 	%% \usebeamercolor{institute in headline}{\color{fg}{\Large{\insertinstitute}\\[1ex]\ }}
-	\usebeamercolor{title in headline}{\color{fg}\textbf{\Large{\inserttitle}\\[1.5ex]}}
+	\usebeamercolor{title in headline}{\color{fg}\textbf{\Large{\inserttitle} \hspace{15em}
+  \usebeamercolor{title in headline}{\color{fg}{\Large Poster made by: Shui Yidi}}\\[1.5ex]}}
 	\usebeamercolor{author in headline}{\color{fg}{\Large{\insertauthor}\\[0.5ex]}}
 	\usebeamercolor{institute in headline}{\color{fg}{\Large{\insertinstitute}\\[1ex]\ }}
       \end{column}
@@ -125,16 +138,17 @@
       \end{column}
       \begin{column}{.20\paperwidth}
 	\vskip2ex
-	\scriptsize{Fill in attribution}
+	\small{31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA}
       \end{column}
-      \begin{column}{.12\paperwidth}
+      \begin{column}{.05\paperwidth}
 	\hfill
       \end{column}
-      \begin{column}{.60\paperwidth}
-	\vskip2.5ex
+      \begin{column}{.70\paperwidth}
+	\vskip2ex
 	\vspace*{\fill}
-	\url{Your url}\hfill
-	\texttt{\{your,names\}@here}
+	\url{https://arxiv.org/abs/1706.03762} \hspace{5em} 
+  \texttt{avaswani@google.com, noam@google.com, nikip@google.com, usz@google.com, llion@google.com,}\\
+  \phantom{https://arxiv.org/abs/1706.03762} \hspace{8.5em} \texttt{aidan@cs.toronto.edu, lukaszkaiser@google.com, illia.polosukhin@gmail.com}
 	\vspace*{\fill}
       \end{column}
       \begin{column}{.2\paperwidth}

@@ -14,6 +14,12 @@ This template has refered to the following templates, and made some modification
 
 You can directly use the file `example.tex` to start your poster. The file provide several examples to help you understand how to use this template.
 
+You can modify the author name in the line 116 in `beamerthemeSJTU.sty` file:
+
+```latex
+\usebeamercolor{title in headline}{\color{fg}{\Large Poster made by: Your name}}\\[1.5ex]}}
+```
+
 You can choose to use the landscape or portrait mode by changing the `width` and `height` in the following line(if you want to use the custom size like in the example):
 
 ```latex
